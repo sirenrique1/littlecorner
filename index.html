@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- ======================================================
+        CONFIGURACIÓN GENERAL
+    ======================================================= -->
+    <audio id="music" preload="auto">
+    <source src="assets/audio/music.mp3" type="audio/mpeg">
+    </audio>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Starlit</title>
+
+    <meta name="description" content="A little corner made with care.">
+
+    <!-- ======================================================
+        GOOGLE FONTS
+    ======================================================= -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- ======================================================
+        ICONOS
+    ======================================================= -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- ======================================================
+        CSS
+    ======================================================= -->
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ======================================================
+        LOADER
+
+        Se mostrará unos segundos antes
+        de cargar toda la página.
+    ======================================================= -->
+
+    <div id="loader">
+
+        <div class="loader-content">
+
+            <div class="loader-star">
+
+                ✦
+
+            </div>
+
+            <p>
+
+                Loading...
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- ======================================================
+        FONDO DEL SITIO
+
+        Aquí se crearán todas las estrellas
+        usando JavaScript.
+    ======================================================= -->
+
+    <div id="background">
+
+        <div id="stars"></div>
+
+        <div id="shooting-stars"></div>
+
+        <div id="gradient"></div>
+
+    </div>
+
+    <!-- ======================================================
+        BARRA DE NAVEGACIÓN
+
+        Será transparente.
+        Después del scroll cambiará de color.
+    ======================================================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+
+                ✦ Starlit
+
+            </div>
+
+            <ul class="menu">
+
+                <li>
+
+                    <a href="#intro">
+
+                        Home
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="#letter">
+
+                        Letter
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="#cards">
+
+                        Thoughts
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="#gallery">
+
+                        Gallery
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- ======================================================
+        HERO
+
+        Pantalla principal.
+    ======================================================= -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <span class="hero-small">
+
+                Un Pequeño rincon para la mujer que más admiro
+
+            </span>
+
+            <h1>
+
+                Estefany Hernandez Juarez 
+
+            </h1>
+
+            <p>
+
+                Hay muchas cosas que quisiera decirte, pero esta vez preferí construir un lugar donde pudieras descubrirlas poco a poco.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <button id="enterButton">
+
+                    Enter
+
+                </button>
+
+            <div class="hero-buttons">
+
+                <button id="playWelcome" class="primary-btn">
+
+                    🎙️ Escúchame
+
+                </button>
+
+            </div>
+
+
+        </div>
+
+        <!-- =======================================
+            FLECHA HACIA ABAJO
+        ======================================== -->
+
+        <div class="scroll-indicator">
+
+            <a href="#intro">
+
+                <i class="fa-solid fa-chevron-down"></i>
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- ======================================================
+        INTRODUCCIÓN
+
+        Aquí comienza realmente la historia.
+    ======================================================= -->
+
+    <section id="intro" class="intro">
+
+        <div class="container">
+
+            <span class="section-label">
+
+                Antes de empezar...
+
+            </span>
+
+            <h2>
+
+                Quiero que descubras algo.
+
+            </h2>
+
+            <p>
+
+                Antes que nada, gracias por estar aquí.
+
+            </p>
+
+            <p>
+                Durante estos días me di cuenta de que muchas veces sentía cosas por ti que no siempre lograba expresar de la mejor manera.
+            </p>
+            
+            <p>
+                Así que decidí crear este pequeño espacio, para mostrarte todos esos detalles que veo en ti y que hacen que, cada día, te admire un poco más.
+            </p>
+
+            <p>
+                Porque si hay algo que siempre me ha gustado hacer, es fijarme en esas pequeñas cosas que hacen que seas tú.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ======================================================
+        TRANSICIÓN
+
+        Esta sección solamente sirve para
+        crear un efecto visual entre bloques.
+    ======================================================= -->
+
+    <section class="divider">
+
+        <div class="divider-line"></div>
+
+    </section>
+
+    <!-- ======================================================
+        CARTA
+
+        El texto aparecerá con efecto
+        máquina de escribir.
+    ======================================================= -->
+
+    <section id="letter" class="letter">
+
+        <div class="container">
+
+            <div class="letter-card">
+
+                <span>
+
+                    I Lava You
+
+                </span>
+
+                <h2>
+
+                    Una carta para ti
+
+                </h2>
+
+                <p id="typing-text">
+
+                    Si llegaste hasta aquí, gracias por regalarme un momento de tu tiempo.
+
+                    Durante estos días he pensado mucho en nosotros, en lo que vivimos, en lo que hice mal y, sobre todo, en la persona que quiero llegar a ser.
+
+                    Entendí que las palabras, por bonitas que sean, no pueden reparar por sí solas una confianza que fue lastimada. Eso solo pueden hacerlo el tiempo, la honestidad y las acciones.
+
+                    Por eso esta página no nació asi de la nada. Nació porque quería que existiera un lugar donde pudiera expresarte algo diferente: todo lo que admiro de ti.
+
+                    Muchas veces me preguntabas qué veía en ti, o qué era lo que tanto me gustaba. La verdad es que nunca supe responderlo por completo.
+
+                    No es una sola cosa.
+
+                    Son muchos pequeños detalles.
+
+                    Tu voz cuando hacemos llamada.
+
+                    Tu sonrisa cuando algo te hace feliz.
+
+                    La forma en que hablas.
+
+                    Cómo caminas.
+
+                    Cómo eliges la ropa que vas a usar.
+
+                    Incluso esos cuando nos molestamos mutuamente, que terminan haciéndome sonreír.
+
+                    Son esas cosas las que hicieron que te fueras convirtiendo en alguien tan especial para mí.
+
+                    Y si hoy estoy aquí, escribiendo cada una de estas palabras, es porque quiero que sepas que sigo viendo todo eso en ti.
+
+                    Ojalá que, mientras recorres esta página, puedas descubrir muchas de esas pequeñas razones por las que me encantas.
+
+                    Si alguna vez vuelves a preguntarme qué veo en ti, espero que esta página responda una pequeña parte de esa pregunta. Porque nunca ha sido una sola razón... siempre han sido cientos de pequeños detalles que, juntos, hacen que seas tú.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ======================================================
+        TRANSICIÓN ENTRE SECCIONES
+    ======================================================= -->
+
+    <section class="divider">
+
+        <div class="divider-line"></div>
+
+    </section>
+
+        <!-- ======================================================
+        TARJETAS
+
+        Cada tarjeta mostrará una idea,
+        recuerdo o cualquier contenido que quieras.
+    ======================================================= -->
+
+    <section id="cards" class="cards">
+
+        <div class="container">
+
+            <span class="section-label">
+
+                Tú ❤️
+
+            </span>
+
+            <h2>
+
+                Las pequeñas cosas que me gustan y amo de ti
+
+            </h2>
+
+            <div class="cards-grid">
+
+                <article class="card">
+
+                    <div class="card-icon">
+                        🎙️
+                    </div>
+
+                    <h3>
+                        Tu voz
+                    </h3>
+
+                    <p>
+                        Porque escucharla siempre me transmite tranquilidad. Hay llamadas que terminan, pero la sensación de haber escuchado tu voz se queda conmigo durante mucho tiempo.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <div class="card-icon">
+                        😊
+                    </div>
+
+                    <h3>
+                        Tu sonrisa
+                    </h3>
+
+                    <p>
+                        Me encanta verla aparecer cuando algo realmente te hace feliz. Es una de esas cosas que siempre consigue sacarme una sonrisa también, aparte me gusta verte sonreir.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <div class="card-icon">
+                        👀
+                    </div>
+
+                    <h3>
+                        Tu mirada
+                    </h3>
+
+                    <p>
+                        Tus ojos siempre expresan más de lo que dicen las palabras. Me gusta perderme en ellos cada vez que puedo. Porque en tu mirada puedo ver tu alegría, tu ternura y todo lo que eres. Esa forma que me ves mientras te hablo, me hace sentir que todo lo que digo es importante para ti, y eso es algo que siempre voy a valorar.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <div class="card-icon">
+                        💫
+                    </div>
+
+                    <h3>
+                        Tu forma de hablar
+                    </h3>
+
+                    <p>
+                        Me encanta escuchar cómo expresas tus ideas y sentimientos. Cada palabra que dices tiene un toque especial que me hace admirarte aún más. Y me pierdo en la forma en que articulas tus pensamientos, porque refleja tu inteligencia y tu sensibilidad.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <div class="card-icon">
+                        🚶‍♀️
+                    </div>
+
+                    <h3>
+                        Tu manera de caminar
+                    </h3>
+
+                    <p>
+                        Me fascina la forma en que te mueves, con seguridad y gracia. Cada paso que das refleja tu personalidad y tu confianza. Es un detalle que me hace admirarte aún más, porque demuestra cómo llevas tu vida con determinación y estilo.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <div class="card-icon">
+                        👗
+                    </div>
+
+                    <h3>
+                        Tu forma de vestir
+                    </h3>
+
+                    <p>
+                        Siempre me fijo en cómo combinas tu ropa. Me encanta cuando eliges un outfit con el que te sientes bonita, porque se nota en la forma en que sonríes. Aparte de eso, me gusta ver cómo tu estilo refleja tu personalidad y cómo te expresas a través de la moda.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <div class="card-icon">
+                        🌸
+                    </div>
+
+                    <h3>
+                        Tu personalidad
+                    </h3>
+
+                    <p>
+                        Lo que más admiro de ti no se puede resumir en una sola palabra. Eres fuerte, inteligente, cariñosa y haces que las personas que te rodean se sientan importantes. Me gusta cómo enfrentas los desafíos y cómo siempre buscas aprender y crecer. Tu personalidad es única y eso es algo que me hace admirarte cada día más.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <div class="card-icon">
+                        🤍
+                    </div>
+
+                    <h3>
+                        Tu esencia
+                    </h3>
+
+                    <p>
+                        Si algún día me preguntaran qué fue lo que más me enamoró de ti, no sabría elegir una sola cosa. Siempre han sido todos esos pequeños detalles que, juntos, hacen que seas tú. Única, especial y maravillosa. Y eso es algo que siempre voy a admirar y valorar.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <div class="card-icon">
+                        💫
+                    </div>
+
+                    <h3>
+                        Lo que más me gusta de ti...
+                    </h3>
+
+                    <p>
+                        No es solo tu sonrisa, tu voz o la forma en que caminas. Es que cada pequeño detalle, por sencillo que parezca, forma parte de la mujer que tanto admiro. Y eso es imposible resumirlo en una sola tarjeta. Me gusta todo de ti, y eso es lo que más me enamora.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ======================================================
+        LÍNEA DEL TIEMPO
+
+        Puedes colocar acontecimientos
+        importantes o simplemente una secuencia.
+    ======================================================= -->
+
+    <section class="timeline">
+
+        <div class="container">
+
+            <span class="section-label">
+
+                Timeline
+
+            </span>
+
+            <h2>
+
+                El camino que estoy eligiendo
+
+            </h2>
+
+            <div class="timeline-wrapper">
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <h3>
+                            Empecé a escuchar de verdad
+                        </h3>
+
+                        <p>
+                            Durante mucho tiempo pensé que escuchar era solo oír. Hoy entiendo que escuchar también es comprender cómo se siente la otra persona.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <h3>
+                            Aprendí a mirar los pequeños detalles
+                        </h3>
+
+                        <p>
+                            Descubrí que las cosas más bonitas no siempre son las más grandes. Una sonrisa, una llamada, una conversación tranquila o un "buenos días" pueden significar muchísimo.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <h3>
+                            Entendí el valor de la confianza
+                        </h3>
+
+                        <p>
+                            La confianza no se pide ni se exige. Se construye poco a poco y se cuida todos los días con honestidad y coherencia.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <h3>
+                            Quiero que mis acciones hablen
+                        </h3>
+
+                        <p>
+                            Las palabras pueden ser bonitas, pero solo las acciones tienen el poder de demostrar un cambio verdadero. Ese es el camino que quiero seguir.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <h3>
+                            Seguir creciendo
+                        </h3>
+
+                        <p>
+                            Independientemente del tiempo que tome, quiero seguir convirtiéndome en una mejor versión de mí, porque ese cambio debe ser real y constante.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ======================================================
+        FRASES ALEATORIAS
+    ======================================================= -->
+
+    <section class="quotes">
+
+        <div class="container">
+
+            <span class="section-label">
+
+                Frases
+
+            </span>
+
+            <h2>
+
+                Pequeños pensamientos para ti ⭐
+
+            </h2>
+
+            <div class="quote-box">
+
+                <p id="quote">
+
+                    Cada clic, una razón más para admirarte.
+
+                </p>
+
+                <button id="quoteButton">
+
+                    💙 Quiero decirte algo más
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ======================================================
+        GALERÍA
+
+        Puedes colocar fotografías
+        o ilustraciones.
+    ======================================================= -->
+
+    <section id="gallery" class="gallery">
+
+        <div class="container">
+
+            <span class="section-label">
+
+                Gallery
+
+            </span>
+
+            <h2>
+
+                Replace this title
+
+            </h2>
+
+            <div class="gallery-grid">
+
+                <div class="gallery-item">
+                    <img src="assets/img/1.jpeg" alt="">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/img/7.jpg" alt="">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/img/4.jpeg" alt="">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/img/10.jpg" alt="">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/img/11.jpg" alt="">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/img/6.jpg" alt="">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/img/9.jpg" alt="">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/img/2.jpeg" alt="">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/img/8.jpg" alt="">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/img/3.jpeg" alt="">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/img/4.jpeg" alt="">
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ======================================================
+        CONSTELACIÓN
+
+        JavaScript dibujará estrellas
+        interactivas.
+    ======================================================= -->
+
+    <section class="constellation">
+
+        <div class="container">
+
+            <span class="section-label">
+
+                Night
+
+            </span>
+
+            <h2>
+
+                Tocas las estrellas con tu luz.
+
+            </h2>
+
+            <canvas id="constellation"></canvas>
+
+        </div>
+
+    </section>
+
+    <!-- ======================================================
+        MENSAJE FINAL
+    ======================================================= -->
+
+    <section class="ending">
+
+        <div class="container">
+
+            <h2>
+
+                Gracias por llegar hasta aquí.
+
+            </h2>
+
+            <p>
+
+                Si leíste cada sección, gracias por dedicarme unos minutos de tu tiempo.
+
+                Esta página nació porque muchas veces sentía cosas por ti que no sabía expresar de la mejor manera. Quise reunirlas aquí, con calma, para que pudieras leerlas cuando tú quisieras.
+
+                Sé que el verdadero cambio no se escribe en una página. Se demuestra cada día, con decisiones, honestidad y constancia. Por eso quiero que lo que encontraste aquí sea solo el reflejo de lo que espero que también puedas ver en mis acciones.
+
+                Gracias por seguir formando parte de una historia que, para mí, sigue siendo muy valiosa.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ======================================================
+        FOOTER
+    ======================================================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <p>
+
+                Con Amor Enrique ✦
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- ======================================================
+        BOTÓN PARA VOLVER ARRIBA
+    ======================================================= -->
+
+    <button id="backToTop">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+    <!-- ======================================================
+        REPRODUCTOR DE MÚSICA
+    ======================================================= -->
+
+    <audio id="welcomeAudio">
+
+        <source src="assets/audio/bienvenida.mp3" type="audio/mpeg">
+
+    </audio>
+
+    <!-- ======================================================
+        JAVASCRIPT
+    ======================================================= -->
+
+    <script type="module" src="assets/js/app.js"></script>
+
+<!-- ==========================================================
+     LIGHTBOX DE LA GALERÍA
+========================================================== -->
+
+    <div id="lightbox" class="lightbox">
+
+        <button id="lightboxClose">
+        <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <button id="lightboxPrev">
+        <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <img
+            id="lightboxImage"
+            src=""
+            alt="Imagen"
+    >
+
+        <button id="lightboxNext">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+    </div>
+
+</body>
+
+</html>
